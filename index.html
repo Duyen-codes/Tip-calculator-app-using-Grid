@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="">
+  </header>
+  <main>
+
+    <form class="form">
+
+      <div class="input-container">
+        <label class="gray-text-label" for="bill-input">Bill</label>
+        <input type="text" id="bill-input" class="bill-input" placeholder="0" onfocus="placeholder=''">
+        <img class="icon" src="./images/icon-dollar.svg" alt="">
+      </div>
+
+      <fieldset class="tip-wrapper">
+        <legend class="gray-text-label">Select Tip %</legend>
+        <button class="tip-amount" data-tip="0.05">5%</button>
+        <button class="tip-amount" data-tip="0.1">10%</button>
+        <button class="tip-amount" data-tip="0.15">15%</button>
+        <button class="tip-amount" data-tip="0.25">25%</button>
+        <button class="tip-amount" data-tip="0.5">50%</button>
+        <input type="text" class="custom-tip" placeholder="Custom" onfocus="placeholder =''"
+          onblur="placeholder='Custom'">
+        </input>
+      </fieldset>
+
+      <div class="input-container">
+        <label class="gray-text-label" for="people-input">Number of People</label>
+        <input type="text" id="people-input" class="ppl-num" placeholder="0" onfocus="placeholder=''">
+        <img class="icon" src="./images/icon-person.svg" alt="">
+        <span class="error-msg">Can't be zero</span>
+      </div>
+    </form>
+
+    <section class="display">
+
+      <div class="display-content">
+        <div class="display-output">
+          <div class="display-text">
+            <p>Tip Amount</p>
+            <span class="small-text">/ person</span>
+          </div>
+          <p class="display-num tip">$0.00</p>
+        </div>
+        <div class="display-output">
+          <div class="display-text">
+            <p>Total</p>
+            <span class="small-text">/ person</span>
+          </div>
+          <p class="display-num">$0.00</p>
+        </div>
+      </div>
+
+      <div><button class="reset-btn">Reset</button></div>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
