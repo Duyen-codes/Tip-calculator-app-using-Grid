@@ -40,7 +40,7 @@ body {
 header {
     padding: 2rem;
     text-align: center;
-    
+    height: 10vh;
 }
 
 main {
@@ -52,6 +52,7 @@ main {
     padding: 4rem;
     min-width: 375px;
     margin-inline: auto;
+    height: 90vh;
 }
 
 form {
@@ -90,7 +91,7 @@ input {
     width: 100%;
     border: none;
     font-size: 2.4rem;
-    padding: 1rem 2rem;
+    padding: 1.5rem 1rem;
     border-radius: .5rem;
     color:hsl(183, 100%, 15%);
     font-weight: 700;
@@ -98,6 +99,19 @@ input {
     outline: none;
 }
 
+.bill-input {
+    background: url('./images/icon-dollar.svg');
+    background-color: var(--input-bg-Light-grayish-cyan2);
+    background-repeat: no-repeat;
+    background-position: top 50% left 2rem;
+}
+
+.ppl-input {
+    background: url('./images/icon-person.svg');
+    background-color: var(--input-bg-Light-grayish-cyan2);
+    background-repeat: no-repeat;
+    background-position: top 50% left 2rem;
+}
 input:focus-visible {
     border: 3px solid hsl(172, 67%, 45%);
 }
@@ -110,12 +124,13 @@ input:focus-visible {
 .tip-amount {
     background-color: hsl(183, 100%, 15%);
     color: white;
-    font-weight: 700;
-    font-size: 2.4rem;
+    font-weight: 400;
+    font-size: 2.5rem;
     border: none;
-    border-radius: .5rem;
-    padding: 1rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
     cursor: pointer;
+    font-family: inherit;
 }
 
 .tip-amount:hover {
@@ -217,8 +232,15 @@ fieldset {
         margin-right: auto;
         max-width: 1440px;
         border-radius: 1rem;
+        height: 50vh;
     }
 
+    .inputs {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: space-around;
+    }
     fieldset {
         grid-template-columns: repeat(3, 1fr);
     }

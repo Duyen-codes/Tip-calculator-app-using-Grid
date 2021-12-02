@@ -16,12 +16,13 @@
   </header>
   <main>
 
-    <section>
+    <section class="inputs">
 
       <div class="input-container">
         <label class="gray-text-label" for="bill-input">Bill</label>
-        <input type="text" id="bill-input" class="bill-input" placeholder="0" onfocus="placeholder=''">
-        <img class="icon" src="./images/icon-dollar.svg" alt="">
+        <input type="text" id="bill-input" class="bill-input" placeholder="0" onfocus="placeholder=''"
+          onblur="placeholder='0'" autocomplete="off">
+        <!-- <img class="icon" src="./images/icon-dollar.svg" alt=""> -->
       </div>
 
       <fieldset class="tip-wrapper">
@@ -38,8 +39,9 @@
 
       <div class="input-container">
         <label class="gray-text-label" for="people-input">Number of People</label>
-        <input type="text" id="people-input" class="ppl-num" placeholder="0" onfocus="placeholder=''">
-        <img class="icon" src="./images/icon-person.svg" alt="">
+        <input type="text" id="people-input" class="ppl-num ppl-input" placeholder="0" onfocus="placeholder=''"
+          onblur="placeholder='0'" autocomplete="off">
+        <!-- <img class="icon" src="./images/icon-person.svg" alt=""> -->
         <span class="error-msg">Can't be zero</span>
       </div>
     </section>
